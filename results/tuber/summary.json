@@ -1,0 +1,15 @@
+{
+  "name": "tuber",
+  "steps": [
+    "comparative",
+    "ncbi"
+  ],
+  "comparative": {
+    "size_vs_genes_r": -0.6847444011970708,
+    "size_vs_genes_n": 3
+  },
+  "ncbi": {
+    "extended_size_vs_genes_r": -0.007498910821653979,
+    "extended_size_vs_genes_n": 5
+  }
+}

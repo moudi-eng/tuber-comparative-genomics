@@ -1,0 +1,45 @@
+{
+  "_description": "Literature-sourced values used in the report. Every number carries its source; null = not specified in the source consulted (never estimated).",
+  "references": {
+    "Martin 2010": "Martin F, Kohler A, Murat C, et al. (2010). Perigord black truffle genome uncovers evolutionary origins and mechanisms of symbiosis. Nature 464: 1033-1038. doi:10.1038/nature08867",
+    "Murat 2018": "Murat C, Payen T, Noel B, et al. (2018). Pezizomycetes genomes reveal the molecular basis of ectomycorrhizal truffle lifestyle. Nature Ecology & Evolution 2: 1956-1965. doi:10.1038/s41559-018-0710-4",
+    "Bonito 2013": "Bonito G, Smith ME, Nowak M, et al. (2013). Historical biogeography and diversification of truffles in the Tuberaceae. PLOS ONE 8: e52765. doi:10.1371/journal.pone.0052765",
+    "Iotti 2018": "Iotti M, et al. (2018). Draft genome sequence of Tuber borchii Vittad. Genome Announcements (PMC6013607; JGI MycoCosm Tubbor1).",
+    "Morin 2020": "Morin E, Murat C, et al. (2020). Draft genome sequences of the black truffles Tuber brumale Vittad. and Tuber indicum Cook & Massee. Microbiology Resource Announcements."
+  },
+  "species": [
+    {"name": "Tuber melanosporum", "core": true,  "genome_size_mb": 125,   "genes": 7496,  "te_percent": 58.2,  "source": "Martin 2010", "color": "#3B2F2F"},
+    {"name": "Tuber borchii",      "core": true,  "genome_size_mb": 97.18, "genes": 12346, "te_percent": 47.12, "source": "Iotti 2018",  "color": "#7FB37F"},
+    {"name": "Tuber aestivum",     "core": true,  "genome_size_mb": 145,   "genes": 9344,  "te_percent": null,  "source": "Murat 2018",  "color": "#C79C3F"},
+    {"name": "Tuber magnatum",     "core": true,  "genome_size_mb": 192,   "genes": null,  "te_percent": 58,    "source": "Murat 2018",  "color": "#E8DCC4"},
+    {"name": "Tuber brumale",      "core": false, "genome_size_mb": null,  "genes": 12380, "te_percent": 61.5,  "source": "Morin 2020",  "color": "#6E5A7E",
+     "note": "Genome size not given in the report; filled from NCBI Assembly when the ncbi step is run."},
+    {"name": "Tuber indicum",      "core": false, "genome_size_mb": null,  "genes": 11870, "te_percent": 47.1,  "source": "Morin 2020",  "color": "#8C6D46",
+     "note": "Genome size not given in the report; filled from NCBI Assembly when the ncbi step is run."}
+  ],
+  "published_correlations": [
+    {"x": "genome_size", "y": "te_percent", "r": 0.83,  "p": 0.01,  "n": 8, "scope": "8 sequenced Pezizomycetes", "source": "Murat 2018"},
+    {"x": "genome_size", "y": "genes",      "r": -0.92, "p": 0.001, "n": 8, "scope": "8 sequenced Pezizomycetes", "source": "Murat 2018"}
+  ],
+  "cazyme_pcwde_range": {
+    "min": {"species": "Terfezia boudieri", "lifestyle": "symbiotic (desert truffle)", "count": 49},
+    "max": {"species": "Ascobolus immersus", "lifestyle": "saprotrophic (coprophilous)", "count": 203},
+    "note": "Secreted plant cell wall-degrading CAZymes across 8 Pezizomycetes. Tuber species lie at the lower end; no individual Tuber value is given in the source text.",
+    "source": "Murat 2018"
+  },
+  "divergence_ages": [
+    {"event": "Common ancestor of the Pezizomycetes",              "age_ma": 470, "error_ma": 67,   "source": "Murat 2018"},
+    {"event": "Onset of Tuberaceae diversification",               "age_ma": 140, "error_ma": 10,   "source": "Murat 2018"},
+    {"event": "Origin of the Tuberaceae (alternative estimate)",   "age_ma": 156, "error_ma": null, "source": "Bonito 2013"},
+    {"event": "T. magnatum vs T. melanosporum",                    "age_ma": 100, "error_ma": null, "source": "Murat 2018"},
+    {"event": "MRCA of the melanosporum clade",                    "age_ma": 79,  "error_ma": null, "source": "Bonito 2013"},
+    {"event": "MRCA of the aestivum clade",                        "age_ma": 101, "error_ma": null, "source": "Bonito 2013"}
+  ],
+  "published_cladogram": {
+    "newick": "((Tuber_magnatum:100,Tuber_melanosporum:100)'~100 Ma':40,(Tuber_aestivum:60,Tuber_borchii:60)'schematic':80)'~140 Ma';",
+    "root_age_ma": 140,
+    "schematic_nodes": ["schematic"],
+    "note": "Branch lengths in Ma. The aestivum/borchii node has no precise age in the cited sources and is drawn schematically at 60 Ma.",
+    "source": "Murat 2018; Bonito 2013"
+  }
+}

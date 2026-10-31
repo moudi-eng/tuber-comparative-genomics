@@ -1,0 +1,7 @@
+name,genome_size_mb,source,ncbi_accession,ncbi_size_mb,difference_pct,ncbi_level,ncbi_contig_n50
+Tuber melanosporum,125.0,Martin 2010,GCF_000151645.1,124.95,-0.04,Scaffold,63046
+Tuber borchii,97.18,Iotti 2018,GCA_003070745.1,97.18,0.0,Contig,185215
+Tuber aestivum,145.0,Murat 2018,GCA_900010015.1,144.72,-0.19,Scaffold,29209
+Tuber magnatum,192.0,Murat 2018,GCA_003182015.1,192.78,0.41,Scaffold,45062
+Tuber brumale,,Morin 2020,GCA_014065205.1,171.44,,Scaffold,65534
+Tuber indicum,,Morin 2020,GCA_006112555.1,118.71,,Contig,964338

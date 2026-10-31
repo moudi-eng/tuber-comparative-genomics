@@ -1,0 +1,24 @@
+{
+  "name": "tuber",
+  "email": "your.name@example.com",
+
+  "species": [
+    "Tuber melanosporum",
+    "Tuber indicum",
+    "Tuber brumale",
+    "Tuber aestivum",
+    "Tuber magnatum",
+    "Tuber borchii"
+  ],
+  "outgroup": ["Choiromyces venosus"],
+
+  "marker": "ITS",
+  "seqs_per_species": 3,
+  "min_length": 450,
+  "max_length": 1200,
+  "local_fasta": null,
+
+  "gap_threshold": 0.5,
+  "bootstrap": 1000,
+  "focal_species": "Tuber melanosporum"
+}
